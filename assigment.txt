@@ -5,3 +5,7 @@ import datetime as dt
 
 df=pd.read_csv('data.csv')
 df
+
+plt.figure(figsize=(18,5))
+plt.plot(df.Date,df.Inr, 'b.-')
+plt.plot(df.Date,df.Gbp, 'r.-')
