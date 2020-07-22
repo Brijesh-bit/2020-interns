@@ -9,3 +9,12 @@ df
 plt.figure(figsize=(18,5))
 plt.plot(df.Date,df.Inr, 'b.-')
 plt.plot(df.Date,df.Gbp, 'r.-')
+
+print(df.Date[::2])
+plt.xticks(df.Date[::2])
+plt.legend(['INR','GBP'],loc=1)
+plt.title('Exchange rate',fontdict={'fontweight':'bold','fontsize':18})
+plt.xlabel('Dates',fontdict={'fontweight':'bold','fontsize':14})
+plt.ylabel('Euro',fontdict={'fontweight':'bold','fontsize':14})
+plt.savefig('assigment graph',dpi=300)
+plt.show()
