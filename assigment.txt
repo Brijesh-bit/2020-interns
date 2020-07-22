@@ -2,3 +2,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as num
 import datetime as dt
+
+df=pd.read_csv('data.csv')
+df
